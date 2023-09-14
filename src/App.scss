@@ -1,0 +1,29 @@
+@import './assets/navbar';
+@import './assets/products';
+@import './assets/cart';
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    height: 100dvh;
+    padding: 0;
+    margin: 0;
+}
+
+#root {
+    height: 100%;
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+  margin: 0 15% ;
+  background-color: rgb(226, 226, 226);
+  min-height: 93%;
+}
+
+img {
+    max-height: 20vh;
+}
