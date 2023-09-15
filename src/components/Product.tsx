@@ -1,6 +1,5 @@
 import { useShopContext } from "../context/useShopContext";
 import { Link } from 'react-router-dom';
-import { ProductPropsInterface, ExtendedProductInterface } from "../types/productTypes";
 
 export const Product = (props: ProductPropsInterface) => {
     const { id, name, price, imgURL } = props.data; //extracts some properties from object props.data and make them variables

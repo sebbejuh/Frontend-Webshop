@@ -1,5 +1,3 @@
-import { ProductInterface, ExtendedProductInterface } from './types/productTypes'
-
 export const PRODUCTS: ProductInterface[] = [
   {
     id: 1,

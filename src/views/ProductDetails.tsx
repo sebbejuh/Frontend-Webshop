@@ -1,6 +1,5 @@
 import { useParams } from 'react-router-dom';
 import { allProducts } from '../products';
-import { ExtendedProductInterface } from '../types/productTypes'
 
 const ProductDetails = () => {
   const { id } = useParams();

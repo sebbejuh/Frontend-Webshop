@@ -1,8 +1,8 @@
-export interface CartItemInterface {
+interface CartItemInterface {
   [key: number]: number;
 }
 
-export interface ShopContextValueInterface {
+interface ShopContextValueInterface {
   cartItems: CartItemInterface;
   getCartAmount: () => number;
   addToCart: (itemId: number) => void;

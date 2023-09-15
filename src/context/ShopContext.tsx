@@ -1,6 +1,5 @@
 import { createContext, useState, useEffect, ReactNode  } from 'react';
 import { allProducts } from '../products';
-import { CartItemInterface, ShopContextValueInterface } from '../types/contextTypes';
 
 const ShopContext = createContext<ShopContextValueInterface | null>(null);// creates context with value null
 
@@ -45,7 +44,7 @@ const ShopContextProvider = (props: { children: ReactNode }) => {
   // REMOVE FROM CART FUNCTION
   const removeFromCart = (itemId: number) => {
     if (cartItems[itemId] > 0) {
-      setCartItems((prev) => ({ ...prev, [itemId]: prev[itemId] - 1 }));
+      setCartItems((prev) => ({ ...prev, [itemId]: prev[itemId] - 1 }));//takes in previous state of cartItems and reduces by 1 to the itemId.
     }
   };
   // UPDATE CART FUNCTION
