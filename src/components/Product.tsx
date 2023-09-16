@@ -1,4 +1,4 @@
-import { useShopContext } from "../context/useShopContext";
+import { useShopContext } from "../context/useCartContext";
 import { Link } from 'react-router-dom';
 
 export const Product = (props: ProductPropsInterface) => {

@@ -1,6 +1,6 @@
 import { allProducts } from "../products";
 import { CartItem } from "../components/CartItem";
-import { useShopContext } from "../context/useShopContext";
+import { useShopContext } from "../context/useCartContext";
 
 const Cart = () => {
     const { cartItems, getCartAmount } = useShopContext();

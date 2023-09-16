@@ -1,4 +1,4 @@
-import { useShopContext } from "../context/useShopContext";
+import { useShopContext } from "../context/useCartContext";
 
 export const CartItem = (props: ProductPropsInterface) => {
     const { id, name, price, imgURL } = props.data;//extract some properties from object props.data and make them variables

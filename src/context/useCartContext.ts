@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { ShopContext } from "../context/ShopContext";
+import { ShopContext } from "./CartContext";
 import { ShopContextValueInterface } from '../types/contextTypes';
 
 export const useShopContext = (): ShopContextValueInterface => {

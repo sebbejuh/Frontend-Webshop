@@ -9,7 +9,7 @@ import ProductDetails from "./views/ProductDetails";
 //sass
 import "./App.scss";
 //context provider
-import { ShopContextProvider } from "./context/ShopContext";
+import { ShopContextProvider } from "./context/CartContext";
 
 const App = () => {
   return (
