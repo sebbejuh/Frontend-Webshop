@@ -18,7 +18,7 @@ const ProductDetails = () => {
       <div className="product-details-text">
         <h3>{product.name}</h3>
         <h4>{product.price} kr</h4>
-        {/* if frequenzt is found in product - render the frequency as ExtendedProductInterface - type assertion*/}
+        {/* if frequency is found in product - render the frequency as ExtendedProductInterface - type assertion*/}
         {('frequency' in product) && (
           <h4>{(product as ExtendedProductInterface).frequency} Hz</h4>
         )}

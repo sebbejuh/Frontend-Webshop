@@ -14,7 +14,7 @@ export const Product = (props: ProductPropsInterface) => {
       <div className="product-text">
         <h3>{name}</h3>
         <h4>{price} kr</h4>
-        {/* if frequenzy exists in props.data - render frequency as ExtendedProductInterface - type assertion*/}
+        {/* if frequency exists in props.data - render frequency as ExtendedProductInterface - type assertion*/}
         {('frequency' in props.data) && (
           <p>{(props.data as ExtendedProductInterface).frequency} Hz</p>
         )}
