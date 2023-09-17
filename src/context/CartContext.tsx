@@ -1,12 +1,13 @@
 import { createContext, useState, useEffect, ReactNode  } from 'react';
-import { allProducts } from '../products';
+import productsJSON from '../fake-db/products.json'
 
 const ShopContext = createContext<ShopContextValueInterface | null>(null);// creates context with value null
 
+const products:(ProductInterface | ExtendedProductInterface)[] = productsJSON.products; // creates products variable to hold the products array from the JSON file
 // GET DEFAULT CART FUNCTION
 const getDefaultCart = () => {
   const cart: CartItemInterface = {};
-  for (let i = 1; i < allProducts.length + 1; i++) {
+  for (let i = 1; i < products.length + 1; i++) {
     cart[i] = 0;
   }
   return cart;
@@ -29,7 +30,7 @@ const ShopContextProvider = (props: { children: ReactNode }) => {
     let totalAmount = 0;
     for (const item in cartItems) {
       if (cartItems[item] > 0) {
-        const itemInfo = allProducts.find((product) => product.id === Number(item));
+        const itemInfo = products.find((product) => product.id === Number(item));
         if (itemInfo) {
           totalAmount += cartItems[item] * itemInfo.price;
         }

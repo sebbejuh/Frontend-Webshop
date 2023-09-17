@@ -11,5 +11,5 @@ interface ExtendedProductInterface extends ProductInterface {
 }
 
 interface ProductPropsInterface {
-  data: ProductInterface;
+  data: ProductInterface | ExtendedProductInterface;
 }
