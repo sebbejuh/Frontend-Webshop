@@ -14,17 +14,17 @@ import { ShopContextProvider } from "./context/CartContext";
 const App = () => {
   return (
     <ShopContextProvider>
-        <BrowserRouter>
-            <Navbar />
-            <div className="container">
-                <Routes>
-                    <Route index element={<Shop />} />
-                    <Route path="/:id" element={<ProductDetails />} />
-                    <Route path="/cart" element={<Cart />} />
-                    <Route path="*" element={<NotFound/>} />
-                </Routes>
-            </div>
-        </BrowserRouter>
+      <BrowserRouter>
+        <Navbar />
+        <div className="container">
+          <Routes>
+            <Route index element={<Shop />} />
+            <Route path="/:id" element={<ProductDetails />} />
+            <Route path="/cart" element={<Cart />} />
+            <Route path="*" element={<NotFound />} />
+          </Routes>
+        </div>
+      </BrowserRouter>
     </ShopContextProvider>
   )
 }

@@ -1,9 +1,9 @@
-import { createContext, useState, useEffect, ReactNode  } from 'react';
+import { createContext, useState, useEffect, ReactNode } from 'react';
 import productsJSON from '../fake-db/products.json'
 
 const ShopContext = createContext<ShopContextValueInterface | null>(null);// creates context with value null
 
-const products:(ProductInterface | ExtendedProductInterface)[] = productsJSON.products; // creates products variable to hold the products array from the JSON file
+const products: (ProductInterface | ExtendedProductInterface)[] = productsJSON.products; // creates products variable to hold the products array from the JSON file
 // GET DEFAULT CART FUNCTION
 const getDefaultCart = () => {
   const cart: CartItemInterface = {};

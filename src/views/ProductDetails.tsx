@@ -2,7 +2,7 @@ import { useParams } from 'react-router-dom';
 import productsJSON from '../fake-db/products.json'
 
 const ProductDetails = () => {
-  const products:(ProductInterface | ExtendedProductInterface)[] = productsJSON.products; //creates products variable to hold the products array from the JSON file
+  const products: (ProductInterface | ExtendedProductInterface)[] = productsJSON.products; //creates products variable to hold the products array from the JSON file
   const { id } = useParams();
   // Find the product with the matching id from parameters
   const product = products.find((product) => product.id === Number(id));

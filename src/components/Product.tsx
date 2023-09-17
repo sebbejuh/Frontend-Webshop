@@ -2,14 +2,14 @@ import { useShopContext } from "../context/useCartContext";
 import { Link } from 'react-router-dom';
 
 export const Product = (props: ProductPropsInterface) => {
-    const { id, name, price, imgURL } = props.data; //extracts some properties from object props.data and make them variables
-    const { addToCart, cartItems } = useShopContext();  //extracts addToCart function and cartItems object from custom hook
+  const { id, name, price, imgURL } = props.data; //extracts some properties from object props.data and make them variables
+  const { addToCart, cartItems } = useShopContext();  //extracts addToCart function and cartItems object from custom hook
 
-    const cartItemAmount = cartItems[id]
+  const cartItemAmount = cartItems[id]
   return (
     <li className="product">
       <div className="product-img">
-        <img src={imgURL}/>
+        <img src={imgURL} />
       </div>
       <div className="product-text">
         <h3>{name}</h3>

@@ -7,7 +7,7 @@ const Navbar = () => {
       <div className="navbar-links">
         <Link to='/'>Shop</Link>
         <Link to='/cart'>
-          <ShoppingCart size={30}/>
+          <ShoppingCart size={30} />
         </Link>
       </div>
     </div>
