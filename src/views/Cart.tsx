@@ -6,11 +6,10 @@ const Cart = () => {
   const products: (ProductInterface | ExtendedProductInterface)[] = productsJSON.products; //creates products variable to hold the products array from the JSON file
   const { cartItems, getCartAmount } = useShopContext();
   const totalAmount = getCartAmount()
+  
   return (
-    <div className="cart">
-      <div className="cart-title-container">
-        <h1>Kundvagn</h1>
-      </div>
+    <section className="cart">
+      <h1>Kundvagn</h1>
       <ul className="cart-items">
         {products.map((product) => {//maps through allProducts array
           if (cartItems[product.id] !== 0) {//if product id isnt 0 (product ids starts at 1 and increases)
@@ -23,8 +22,8 @@ const Cart = () => {
           <p>Totalt pris: {totalAmount} kr</p>
           <button> Beställ </button>
         </div>//else
-        : <h4>Kundvagnen är tom.</h4>}
-    </div>
+        : <h3>Kundvagnen är tom.</h3>}
+    </section>
   )
 }
 export default Cart

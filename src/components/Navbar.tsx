@@ -3,14 +3,14 @@ import { ShoppingCart } from 'phosphor-react';
 
 const Navbar = () => {
   return (
-    <div className="navbar">
-      <div className="navbar-links">
+    <header className="navbar">
+      <nav className="navbar-links">
         <Link to='/'>Butik</Link>
         <Link to='/cart'>
           <ShoppingCart size={30} />
         </Link>
-      </div>
-    </div>
+      </nav>
+    </header>
   )
 }
 
