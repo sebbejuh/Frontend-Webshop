@@ -9,7 +9,7 @@ const Cart = () => {
   return (
     <div className="cart">
       <div className="cart-title-container">
-        <h1>Cart</h1>
+        <h1>Kundvagn</h1>
       </div>
       <ul className="cart-items">
         {products.map((product) => {//maps through allProducts array
@@ -20,10 +20,10 @@ const Cart = () => {
       </ul>
       {totalAmount > 0 ?//if totalAmount is greater than 0
         <div className="checkout">
-          <p>Total amount: {totalAmount} kr</p>
-          <button> Checkout </button>
+          <p>Totalt pris: {totalAmount} kr</p>
+          <button> Beställ </button>
         </div>//else
-        : <h4>Your Cart is Empty</h4>}
+        : <h4>Kundvagnen är tom.</h4>}
     </div>
   )
 }

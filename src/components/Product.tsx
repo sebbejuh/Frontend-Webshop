@@ -13,18 +13,14 @@ export const Product = (props: ProductPropsInterface) => {
       </div>
       <div className="product-text">
         <h3>{name}</h3>
-        <h4>{price} kr</h4>
-        {/* if frequency exists in props.data - render frequency as ExtendedProductInterface - type assertion*/}
-        {('frequency' in props.data) && (
-          <p>{(props.data as ExtendedProductInterface).frequency} Hz</p>
-        )}
+        <h4>Pris: {price} kr</h4>
       </div>
       <div className="product-btn">
         <button className="addToCartBtn" onClick={() => addToCart(id)}> {/* runs addToCart function from ShopContext with id*/}
-          Add to Cart ({cartItemAmount}) {/* if amount is greater than 0 display the amount*/}
+          Köp ({cartItemAmount}) {/* if amount is greater than 0 display the amount*/}
         </button>
         <Link to={`/${id}`}>
-          <button>Details</button>
+          <button>Detaljer</button>
         </Link>
       </div>
     </li>

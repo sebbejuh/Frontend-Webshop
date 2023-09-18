@@ -9,7 +9,7 @@ const ProductDetails = () => {
 
   if (!product) {
     // Handle the case where the product is not found
-    return <div>Product not found</div>;
+    return <div><h1>Produkten hittades inte.</h1></div>;
   }
 
   return (
@@ -17,10 +17,10 @@ const ProductDetails = () => {
       <img src={product.imgURL} alt={product.name} />
       <div className="product-details-text">
         <h3>{product.name}</h3>
-        <h4>{product.price} kr</h4>
+        <h4>Pris: {product.price} kr</h4>
         {/* if frequency is found in product - render the frequency as ExtendedProductInterface - type assertion*/}
         {('frequency' in product) && (
-          <h4>{(product as ExtendedProductInterface).frequency} Hz</h4>
+          <h4>Frekvens: {(product as ExtendedProductInterface).frequency} Hz</h4>
         )}
         <p>{product.description}</p>
       </div>
