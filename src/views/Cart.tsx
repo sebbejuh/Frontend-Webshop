@@ -10,7 +10,7 @@ const Cart = () => {
   return (
     <section className="cart">
       <h1>Kundvagn</h1>
-      <ul className="cart-items">
+      <ul className="cart-list">
         {products.map((product) => {//maps through allProducts array
           if (cartItems[product.id] !== 0) {//if product id isnt 0 (product ids starts at 1 and increases)
             return <CartItem key={product.id} data={product} />//passes product object through props

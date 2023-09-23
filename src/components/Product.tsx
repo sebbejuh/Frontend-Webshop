@@ -8,20 +8,19 @@ export const Product = (props: ProductPropsInterface) => {
   const cartItemAmount = cartItems[id]
   return (
     <li className="product">
+      <Link to={`/${id}`}>
       <div className="product-img">
         <img src={imgURL} />
       </div>
+      </Link>
       <div className="product-text">
         <h3>{name}</h3>
         <h4>Pris: {price} kr</h4>
       </div>
       <div className="product-btn">
         <button className="addToCartBtn" onClick={() => addToCart(id)}> {/* runs addToCart function from ShopContext with id*/}
-          Köp ({cartItemAmount}) {/* if amount is greater than 0 display the amount*/}
+          Köp <span>{`(${cartItemAmount})`}</span> {/* if amount is greater than 0 display the amount*/}
         </button>
-        <Link to={`/${id}`}>
-          <button>Detaljer</button>
-        </Link>
       </div>
     </li>
   )

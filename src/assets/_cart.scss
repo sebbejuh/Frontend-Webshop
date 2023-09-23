@@ -1,49 +1,77 @@
 .cart {
   background-color: white;
-  min-width: 30%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.checkout {
+  // min-width: 30%;
   display: flex;
   flex-direction: column;
   align-items: center;
 
-  p {
-    font-weight: 600;
-  }
-
-  button {
+  h1 {
+    background: #454545;
     color: white;
-    background-color: rgb(57, 159, 73);
-    padding: 0.7rem;
-    border-radius: 1% 15%;
-  }
-
-  button:hover {
-    cursor: pointer;
-    text-decoration: underline;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 0;
   }
 }
 
-.cart-items {
+
+.cart-list {
   display: flex;
   flex-direction: column-reverse;
   justify-content: center;
   align-items: center;
+  padding-top: 2px;
+  gap: 2px;
 }
 
 .cart-item {
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 1rem;
+  padding: 0 8vw;
+  flex: 1 1 125px;
+  background: white;
+  border: 1px solid rgba(0, 0, 0, .3);
+  position: relative;
+  overflow: hidden;
 
-  img {
-    max-height: 10vh;
-    max-width: 3vw;
+  .cart-img {
+    height: 7rem;
+    width: 7rem;
+    margin: 1% 5%;
+    display: flex;
+    justify-content: center;
+
+    img {
+      max-height: 100%;
+      max-width: 100%;
+    }
+  }
+}
+
+.cart-product-text {
+
+  h3,
+  h4 {
+    padding: 4% 0px;
+  }
+
+  .cart-count {
+    display: flex;
+    align-items: center;
+
+    button {
+      width: 30px;
+      height: 30px;
+      font-size: large;
+    }
+
+    input {
+      height: 30px;
+      padding-left: 5%;
+    }
   }
 }
 
@@ -56,5 +84,33 @@
 
   input {
     width: 30%
+  }
+}
+
+.checkout {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  // border: 1px solid rgba(0, 0, 0, .3);
+  width: 100%;
+  margin-top: 2%;
+
+  p {
+    font-weight: 600;
+    margin: 1rem 0;
+  }
+
+  button {
+    color: white;
+    background-color: rgb(57, 159, 73);
+    padding: 1rem 2rem;
+    border-radius: 0% 20%;
+    font-size: large;
+    margin: 0 0 1rem 0;
+  }
+
+  button:hover {
+    cursor: pointer;
+    text-decoration: underline;
   }
 }

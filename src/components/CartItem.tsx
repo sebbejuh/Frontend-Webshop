@@ -1,4 +1,5 @@
 import { useShopContext } from "../context/useCartContext";
+import { Link } from 'react-router-dom';
 
 export const CartItem = (props: ProductPropsInterface) => {
   const { id, name, price, imgURL } = props.data;//extract some properties from object props.data and make them variables
@@ -6,7 +7,11 @@ export const CartItem = (props: ProductPropsInterface) => {
 
   return (
     <li className='cart-item'>
-      <img src={imgURL} />
+      <div className="cart-img">
+        <Link to={`/${id}`}>
+          <img src={imgURL} />
+        </Link>
+      </div>
       <div className="cart-product-text">
         <h3>{name}</h3>
         <h4>Pris: {price} kr</h4>
