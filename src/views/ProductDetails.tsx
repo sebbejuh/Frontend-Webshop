@@ -8,10 +8,8 @@ const ProductDetails = () => {
   const productId = Number(id); //converts id to Number and assigns new variable
   //find the product with the matching id from parameters
   const product = products.find((product) => product.id === productId);
-  
-  const { addToCart, cartItems } = useShopContext(); //extracts addToCart function and cartItems object from custom hook
 
-  const cartItemAmount = cartItems[productId]
+  const { addToCart } = useShopContext(); //extracts addToCart function from custom hook
 
   if (!product) {
     //handle the case where the product is not found
@@ -34,7 +32,7 @@ const ProductDetails = () => {
           )}
           <p>{product.description}</p>
           <button className="addToCartBtn" onClick={() => addToCart(productId)}> {/* runs addToCart function from ShopContext with productId*/}
-          Köp
+            Köp
           </button>
         </div>
       </div>
