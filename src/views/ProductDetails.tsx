@@ -34,7 +34,7 @@ const ProductDetails = () => {
           )}
           <p>{product.description}</p>
           <button className="addToCartBtn" onClick={() => addToCart(productId)}> {/* runs addToCart function from ShopContext with productId*/}
-          Köp <span>{`(${cartItemAmount})`}</span> {/*display the amount*/}
+          Köp
           </button>
         </div>
       </div>

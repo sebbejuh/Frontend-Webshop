@@ -19,7 +19,7 @@ export const Product = (props: ProductPropsInterface) => {
       </div>
       <div className="product-btn">
         <button className="addToCartBtn" onClick={() => addToCart(id)}> {/* runs addToCart function from ShopContext with id*/}
-          Köp <span>{`(${cartItemAmount})`}</span> {/*display the amount*/}
+          Köp
         </button>
       </div>
     </li>

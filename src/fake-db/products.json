@@ -30,7 +30,7 @@
     },
     {
       "id": 5,
-      "name": "Razer Raptor Skärm",
+      "name": "Raptor Skärm",
       "price": 9500,
       "imgURL": "https://cdn.inet.se/product/1600x900/2223074_3.png",
       "description": "En spelskärm kräver extrem prestanda med snabbhet och tydlighet, så att du kan reagera på direkten.",
@@ -38,11 +38,47 @@
     },
     {
       "id": 6,
-      "name": "AOC AGON Skärm",
+      "name": "AGON Skärm",
       "price": 12899,
       "imgURL": "https://cdn.inet.se/product/1600x900/2222834_6.png",
       "description": "AGON OLED innebär blixtsnabb responstid och oändlig kontrast med perfekt svärta. Dessutom får du en fantastisk HDR-upplevelse där spelen verkligen kommer till liv.",
       "frequency": "240"
+    },
+    {
+      "id": 7,
+      "name": "Apelsin",
+      "price": 19,
+      "imgURL": "https://img.freepik.com/premium-photo/fresh-single-orange-fruit-isolated-white_127657-19187.jpg",
+      "description": "Indulge your senses with the vibrant and refreshing allure of our premium-grade oranges. Bursting with natural goodness and radiant color, these delectable citrus fruits are the epitome of a sun-kissed paradise. Each orange is meticulously hand-picked from our finest orchards, ensuring unparalleled quality and flavor."
+    },
+    {
+      "id": 8,
+      "name": "Äpple",
+      "price": 12,
+      "imgURL": "https://img.freepik.com/premium-photo/red-apples-isolated-white-background_299651-65.jpg",
+      "description": "Experience the essence of autumn with our exquisite selection of hand-picked apples, straight from the bountiful orchards. With a perfect blend of tantalizing flavors and satisfying crunch, these premium apples are a true testament to nature's finest craftsmanship."
+    },
+    {
+      "id": 9,
+      "name": "Ananas",
+      "price": 45,
+      "imgURL": "https://img.freepik.com/premium-photo/juicy-pineapple-white-background-isolated_96064-298.jpg",
+      "description": "Experience the exotic allure of the tropics with our hand-picked pineapples, a true embodiment of sun-soaked bliss. With their crown of spiky green leaves and a golden-yellow hue that beckons, these pineapples are nature's gift, brimming with irresistible flavor and unparalleled juiciness.",
+      "frequency": "265"
+    },
+    {
+      "id": 10,
+      "name": "Kiwi",
+      "price": 9,
+      "imgURL": "https://img.freepik.com/premium-photo/kiwi-fruit-isolated-white-background_42033-482.jpg",
+      "description": "Discover the vibrant allure of our exquisite kiwis, nature's delectable gem that delights both the eye and the palate. With their small, oval shape and a velvety brown exterior, these kiwis hold a world of juicy surprises within their unassuming appearance."
+    },
+    {
+      "id": 11,
+      "name": "Persika",
+      "price": 14,
+      "imgURL": "https://img.freepik.com/premium-photo/peach-isolated-white-background_93675-2945.jpg",
+      "description": "As you gaze upon these delightful fruits, their velvety skin in hues of blush pink and golden yellow captures the essence of pure beauty. Each peach is carefully selected, ensuring optimal ripeness and a tantalizingly soft texture that yields with a gentle squeeze."
     }
   ]
 }
