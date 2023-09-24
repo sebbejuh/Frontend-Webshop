@@ -19,10 +19,12 @@ const Cart = () => {
       </ul>
       {totalAmount > 0 ?//if totalAmount is greater than 0
         <div className="checkout">
-          <p>Totalt pris: {totalAmount} kr</p>
+          <p>Totalt pris: {new Intl.NumberFormat('sv-SV').format(totalAmount)} kr</p>
           <button> Beställ </button>
         </div>//else
-        : <h3>Kundvagnen är tom.</h3>}
+        : <li className='cart-item'>
+          <h3>Kundvagnen är tom.</h3>
+          </li>}
     </section>
   )
 }

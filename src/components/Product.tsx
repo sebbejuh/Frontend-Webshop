@@ -15,11 +15,11 @@ export const Product = (props: ProductPropsInterface) => {
       </Link>
       <div className="product-text">
         <h3>{name}</h3>
-        <h4>Pris: {price} kr</h4>
+        <h4>Pris: {new Intl.NumberFormat('sv-SV').format(price)} kr</h4>
       </div>
       <div className="product-btn">
         <button className="addToCartBtn" onClick={() => addToCart(id)}> {/* runs addToCart function from ShopContext with id*/}
-          Köp <span>{`(${cartItemAmount})`}</span> {/* if amount is greater than 0 display the amount*/}
+          Köp <span>{`(${cartItemAmount})`}</span> {/*display the amount*/}
         </button>
       </div>
     </li>
