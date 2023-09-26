@@ -7,7 +7,7 @@ interface ProductInterface {
 }
 
 interface ExtendedProductInterface extends ProductInterface {
-  frequency: string;
+  nonEuCountry: string;
 }
 
 interface ProductPropsInterface {

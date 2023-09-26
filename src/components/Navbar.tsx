@@ -9,8 +9,6 @@ const Navbar = () => {
   for (const id in cartItems) { //loops through cartItems by id
     totalItems += cartItems[id];//adds the value for each property to totalItems
   }
-  
-  console.log("Total number of items:", totalItems);
   return (
     <header className="navbar">
       <nav className="navbar-links">

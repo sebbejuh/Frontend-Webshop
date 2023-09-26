@@ -26,9 +26,9 @@ const ProductDetails = () => {
         <div className="product-details-text">
           <h3>{product.name}</h3>
           <h4>Pris: {new Intl.NumberFormat('sv-SV').format(product.price)} kr</h4>
-          {/* if frequency is found in product - render the frequency as ExtendedProductInterface - type assertion*/}
-          {('frequency' in product) && (
-            <h4>Frekvens: {(product as ExtendedProductInterface).frequency} Hz</h4>
+          {/* if nonEuCountry is found in product - render the nonEuCountry as ExtendedProductInterface - type assertion*/}
+          {('nonEuCountry' in product) && (
+            <h4>Land: {(product as ExtendedProductInterface).nonEuCountry} <span>(utanför EU)</span></h4>
           )}
           <p>{product.description}</p>
           <button className="addToCartBtn" onClick={() => addToCart(productId)}> {/* runs addToCart function from ShopContext with productId*/}

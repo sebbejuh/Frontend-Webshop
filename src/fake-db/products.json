@@ -2,83 +2,92 @@
   "products": [
     {
       "id": 1,
-      "name": "Iphone",
-      "price": 9000,
-      "imgURL": "https://cdn.pixabay.com/photo/2013/07/13/12/46/iphone-160307_1280.png",
-      "description": "iPhone. Det mest avancerade dubbelkamerasystemet någonsin på en iPhone. Blixtsnabbt A15 Bionic-chip. Ett stort språng för batteritiden. Tålig design. Supersnabbt 5G1. Och en ljusare Super Retina XDR-skärm."
+      "name": "Citron",
+      "price": 9,
+      "imgURL": "https://img.freepik.com/free-photo/lemon-isolated-white_93675-131291.jpg",
+      "description": "Våra saftiga citroner är en uppfriskande smakupplevelse direkt från naturens skattkammare. Varje citron är noga utvald för att säkerställa högsta kvalitet och maximal smak. Denna syrliga citrusfrukt är en oumbärlig ingrediens i köket och en källa till en mängd olika användningsområden, från matlagning till drycker och bakning."
     },
     {
       "id": 2,
-      "name": "Samsung",
-      "price": 8000,
-      "imgURL": "https://cdn.pixabay.com/photo/2016/05/07/06/35/pawn-1377128_1280.png",
-      "description": "Samsung. Telefonen har en skarp trippelkamera och en selfiekamera på hela 32 MP, och med flera avancerade AI-funktioner kan vem som helst få till foton och videos av proffskvalitet. Skärmen har en uppdateringsfrekvens på 120 Hz, vilket ger dig en behaglig och uppslukande upplevelse oavsett om du gamear eller scrollar."
+      "name": "Mango",
+      "price": 45,
+      "imgURL": "https://img.freepik.com/free-photo/mango-table_144627-16763.jpg",
+      "description": "Våra saftiga mangofrukter är en tropisk delikatess som tar dina smaklökar på en resa till paradiset. Varje mango är noga utvald för att säkerställa optimal mognad och smak. Med sin oemotståndliga sötma och saftiga, orange kött är våra mangos en smakfull och exotisk upplevelse som ger en smak av solsken och värme varje gång du tar en tugga.",
+      "nonEuCountry": "Pakistan"
     },
     {
       "id": 3,
-      "name": "Nokia",
-      "price": 2100,
-      "imgURL": "https://cdn.pixabay.com/photo/2013/07/12/16/01/smartphone-150753_1280.png",
-      "description": "Nokia är en stryktålig telefon med mycket lång batteritid. Tillverkad i hållbart material som tål vardagen. Telefonen är inte större än att den får plats i handflatan och i ergonomiskt böjd form. Upp till 15 timmars samtalstid eller nästan en månad i standby. Spela nya generationen snake."
+      "name": "Banan",
+      "price": 21,
+      "imgURL": "https://img.freepik.com/free-photo/single-banana-isolated-white-background_839833-17794.jpg",
+      "description": "Våra bananer är kända för att vara den ultimata källan till snabb och naturlig energi, förpackad i en skal som är lika bekväm som smakfull. Varje banan är noggrant utvald för att ge dig den perfekta mogenheten och smakupplevelsen.",
+      "nonEuCountry": "Indien"
     },
     {
       "id": 4,
-      "name": "Google Pixel",
-      "price": 560,
-      "imgURL": "https://cdn.pixabay.com/photo/2018/10/11/05/11/google-pixel-3-3738925_1280.png",
-      "description": "Google Pixel är både smal och stark. Designen imponerar med ett mycket tunnare utseende och skärmen har också blivit större. (5,5 tum) Alltså: Tunnare, samma mått men större skärm. Skärmen är också ljusare och har bättre kontrast i sin upplösning."
+      "name": "Vattenmelon",
+      "price": 56,
+      "imgURL": "https://img.freepik.com/free-photo/green-striped-ripe-watermelon-with-slice-cross-section-isolated-white-background-with-copy-space-text-images-special-kind-berry-sweet-pink-flesh-with-black-seeds-side-view_639032-1254.jpg",
+      "description": "Vår saftiga vattenmelon är som en färsk sommardag i varje tugga. Varje vattenmelon är omsorgsfullt utvald för att säkerställa att den är mogen och redo att leverera en söt och uppfriskande smakupplevelse. Med sitt knallrosa kött och sprakande gröna skal är vår vattenmelon en symbol för sommaren och den ultimata sättet att kyla ner sig när temperaturen stiger."
     },
     {
       "id": 5,
-      "name": "Raptor Skärm",
-      "price": 9500,
-      "imgURL": "https://cdn.inet.se/product/1600x900/2223074_3.png",
-      "description": "En spelskärm kräver extrem prestanda med snabbhet och tydlighet, så att du kan reagera på direkten.",
-      "frequency": "265"
+      "name": "Gröna Vindruvor",
+      "price": 34,
+      "imgURL": "https://img.freepik.com/free-photo/green-grape_1203-6912.jpg",
+      "description": "Våra saftiga gröna vindruvor är en smakfull fest för dina smaklökar, skapad av naturens finaste. Varje druva är omsorgsfullt odlad och handplockad för att säkerställa att du får den högsta kvaliteten och den sötaste smaken. Med sin saftiga konsistens och delikata smak är våra vindruvor det perfekta valet för att njuta av en naturlig, hälsosam och uppfriskande snacksupplevelse."
     },
     {
       "id": 6,
-      "name": "AGON Skärm",
-      "price": 12899,
-      "imgURL": "https://cdn.inet.se/product/1600x900/2222834_6.png",
-      "description": "AGON OLED innebär blixtsnabb responstid och oändlig kontrast med perfekt svärta. Dessutom får du en fantastisk HDR-upplevelse där spelen verkligen kommer till liv.",
-      "frequency": "240"
+      "name": "Blå Vindruvor",
+      "price": 36,
+      "imgURL": "https://img.freepik.com/free-photo/summer-black-blue-sweet-ripe_1203-5405.jpg",
+      "description": "Våra saftiga blå vindruvor är en smakfull fest för dina smaklökar, skapad av naturens finaste. Varje druva är omsorgsfullt odlad och handplockad för att säkerställa att du får den högsta kvaliteten och den sötaste smaken. Med sin saftiga konsistens och delikata smak är våra vindruvor det perfekta valet för att njuta av en naturlig, hälsosam och uppfriskande snacksupplevelse."
     },
     {
       "id": 7,
       "name": "Apelsin",
       "price": 19,
       "imgURL": "https://img.freepik.com/premium-photo/fresh-single-orange-fruit-isolated-white_127657-19187.jpg",
-      "description": "Indulge your senses with the vibrant and refreshing allure of our premium-grade oranges. Bursting with natural goodness and radiant color, these delectable citrus fruits are the epitome of a sun-kissed paradise. Each orange is meticulously hand-picked from our finest orchards, ensuring unparalleled quality and flavor."
+      "description": "Våra fräscha solmogna apelsiner är den ultimata smakupplevelsen för dig som älskar naturens underbara gåvor. Denna saftiga och smakrika citrusfrukt är handplockad med omsorg och kärlek för att säkerställa högsta kvalitet och smak. Med sin strålande orange färg och saftiga kärna är våra apelsiner en smakrik och hälsosam tillskott till din kost."
     },
     {
       "id": 8,
       "name": "Äpple",
       "price": 12,
       "imgURL": "https://img.freepik.com/premium-photo/red-apples-isolated-white-background_299651-65.jpg",
-      "description": "Experience the essence of autumn with our exquisite selection of hand-picked apples, straight from the bountiful orchards. With a perfect blend of tantalizing flavors and satisfying crunch, these premium apples are a true testament to nature's finest craftsmanship."
+      "description": "Våra saftiga och ekologiska äpplen är en hängivenhet till naturens enastående skapelse. Varje äpple är noggrant odlad med kärlek och omsorg för att erbjuda dig den bästa smakupplevelsen och näringen som naturen har att erbjuda. Med sin knapriga textur och ljuvliga smak är våra äpplen den ultimata tillsatsen till din hälsosamma livsstil."
     },
     {
       "id": 9,
       "name": "Ananas",
       "price": 45,
       "imgURL": "https://img.freepik.com/premium-photo/juicy-pineapple-white-background-isolated_96064-298.jpg",
-      "description": "Experience the exotic allure of the tropics with our hand-picked pineapples, a true embodiment of sun-soaked bliss. With their crown of spiky green leaves and a golden-yellow hue that beckons, these pineapples are nature's gift, brimming with irresistible flavor and unparalleled juiciness.",
-      "frequency": "265"
+      "description": "Våra söta och saftiga färska ananas är ett tropiskt smakäventyr som tar dina smaklökar på en resa till paradiset. Varje ananas är noggrant utvald för att säkerställa maximal smak och saftighet. Denna exotiska frukt är inte bara en delikatess för gommen utan också en källa till viktiga näringsämnen och antioxidanter som främjar din hälsa.",
+      "nonEuCountry": "Brasilien"
     },
     {
       "id": 10,
       "name": "Kiwi",
       "price": 9,
       "imgURL": "https://img.freepik.com/premium-photo/kiwi-fruit-isolated-white-background_42033-482.jpg",
-      "description": "Discover the vibrant allure of our exquisite kiwis, nature's delectable gem that delights both the eye and the palate. With their small, oval shape and a velvety brown exterior, these kiwis hold a world of juicy surprises within their unassuming appearance."
+      "description": "Våra färska kiwifrukter är en smakfull explosion av fräschhet och vitalitet. Dessa små gröna kraftpaket är handplockade med omsorg och mognar perfekt för att ge dig den bästa smakupplevelsen. Kiwin är inte bara en läcker delikatess utan också en näringsrik frukt som är full av vitaminer och antioxidanter, perfekt för att boosta din hälsa.",
+      "nonEuCountry": "Kina"
     },
     {
       "id": 11,
       "name": "Persika",
       "price": 14,
       "imgURL": "https://img.freepik.com/premium-photo/peach-isolated-white-background_93675-2945.jpg",
-      "description": "As you gaze upon these delightful fruits, their velvety skin in hues of blush pink and golden yellow captures the essence of pure beauty. Each peach is carefully selected, ensuring optimal ripeness and a tantalizingly soft texture that yields with a gentle squeeze."
+      "description": "Våra saftiga solmogna persikor är en smakfull skatt som naturen har att erbjuda. Varje persika handplockas med varsamhet och omsorg för att säkerställa att du får den mest underbara smakupplevelsen. Med sin förtrollande sötma och saftiga konsistens är våra persikor den perfekta frukten för att njuta av som en hälsosam och uppfriskande behandling."
+    },
+    {
+      "id": 12,
+      "name": "Drakfrukt",
+      "price": 198,
+      "imgURL": "https://img.freepik.com/free-photo/dragon-fruit-white-background_1127-226.jpg",
+      "description": "Vår läckra drakfrukt är en tropisk skatt som inte bara smakar fantastiskt, utan också ser fängslande ut med sitt levande och färgglada yttre. Varje drakfrukt är noga utvald för att säkerställa optimal mognad och smak. Med sin unika smakprofil och en explosion av färger är vår drakfrukt ett spännande tillskott till din fruktupplevelse.",
+      "nonEuCountry": "Mexico"
     }
   ]
 }

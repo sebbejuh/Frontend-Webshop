@@ -44,9 +44,13 @@
     display: flex;
     justify-content: center;
 
-    img {
-      max-height: 100%;
-      max-width: 100%;
+    a{
+      display: flex;
+      align-items: center;
+      img {
+        max-height: 100%;
+        max-width: 100%;
+      }
     }
   }
 }
@@ -117,5 +121,6 @@
   button:hover {
     cursor: pointer;
     text-decoration: underline;
+    filter: brightness(120%);
   }
 }
