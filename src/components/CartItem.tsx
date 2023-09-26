@@ -8,7 +8,7 @@ export const CartItem = (props: ProductPropsInterface) => {
   return (
     <li className='cart-item'>
       <div className="cart-img">
-        <Link to={`/${id}`}>
+        <Link to={`/webshop-ts/${id}`}>
           <img src={imgURL} />
         </Link>
       </div>

@@ -12,8 +12,8 @@ const Navbar = () => {
   return (
     <header className="navbar">
       <nav className="navbar-links">
-        <Link to='/'>Butik</Link>
-        <Link to='/cart'>
+        <Link to='/webshop-ts/'>Butik</Link>
+        <Link to='/webshop-ts/cart'>
           <ShoppingCart size={30} />
           {totalItems > 0 && <span>{totalItems}</span>}
         </Link>

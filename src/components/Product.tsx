@@ -7,7 +7,7 @@ export const Product = (props: ProductPropsInterface) => {
 
   return (
     <li className="product">
-      <Link to={`/${id}`}>
+      <Link to={`/webshop-ts/${id}`}>
         <div className="product-img">
           <img src={imgURL} />
         </div>
