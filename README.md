@@ -26,4 +26,4 @@ Run: `npm run dev`
 
 ### To Visit App:
 
-`http://localhost:5173/`
+`http://localhost:5173/webshop-ts/`
