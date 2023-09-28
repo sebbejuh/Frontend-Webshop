@@ -88,7 +88,7 @@
   flex-wrap: wrap;
   align-items: center;
   background-color: rgb(255, 255, 255);
-  gap: 3rem;
+  // gap: 3rem;
   margin: 5% 0 15% 0;
   h1{
     background: #454545;
@@ -98,6 +98,23 @@
     align-items: center;
     justify-content: center;
     padding: 1rem 0;
+  }
+  .details-link-container{
+    width: 100%;
+    
+    .details-link{
+      display: flex;
+      align-items:end;
+      padding-top: 1rem;
+      padding-left: 1rem;
+      color: black;
+      svg{
+        background-color: #454545;
+        border-radius: 100%;
+        padding: 2px;
+        color: white;
+      }
+    }
   }
   .product-details-2{
     max-width: 700px;

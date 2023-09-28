@@ -1,6 +1,7 @@
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import productsJSON from '../fake-db/products.json';
 import { useShopContext } from "../context/useCartContext";
+import { ArrowLeft } from 'phosphor-react';
 
 const ProductDetails = () => {
   const products: (ProductInterface | ExtendedProductInterface)[] = productsJSON.products; //creates products variable to hold the products array from the JSON file
@@ -19,6 +20,9 @@ const ProductDetails = () => {
   return (
     <section className="product-details">
       <h1>{product.name}</h1>
+      <div className="details-link-container">
+        <Link className='details-link' to='/webshop-ts/'> <ArrowLeft size={42} /> </Link>
+      </div>
       <div className="product-details-2">
         <div className="product-details-img">
           <img src={product.imgURL} alt={product.name} />
