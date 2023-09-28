@@ -14,6 +14,11 @@
     justify-content: center;
     padding: 1rem 0;
   }
+  .shop-link{
+    color: black;
+    padding-bottom: 2rem;
+    padding-top: 1rem;
+  }
 }
 
 
@@ -31,7 +36,7 @@
   flex-direction: row;
   align-items: center;
   padding: 0 8vw;
-  flex: 1 1 125px;
+  flex: 0 1 125px;
   background: white;
   border: 1px solid rgba(0, 0, 0, .3);
   position: relative;

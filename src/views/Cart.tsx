@@ -1,6 +1,7 @@
 import { CartItem } from "../components/CartItem";
 import { useShopContext } from "../context/useCartContext";
 import productsJSON from '../fake-db/products.json'
+import { Link } from 'react-router-dom';
 
 const Cart = () => {
   const products: (ProductInterface | ExtendedProductInterface)[] = productsJSON.products; //creates products variable to hold the products array from the JSON file
@@ -25,6 +26,7 @@ const Cart = () => {
         : <li className='cart-item'>
           <h3>Kundvagnen är tom.</h3>
           </li>}
+      <Link className="shop-link" to='/webshop-ts/'>Fortsätt handla</Link>
     </section>
   )
 }
