@@ -14,7 +14,7 @@ const Cart = () => {
       date: new Date().toISOString(), // add a timestamp for the order
     };
     // Retrieve the existing orders from localStorage or create an empty array
-    const orders = JSON.parse(localStorage.getItem('orders')) || [];
+    const orders = JSON.parse(localStorage.getItem('orders') || '[]');
     // Add the new order to the array of orders
     orders.push(order);
     // Store the updated orders array back in localStorage
