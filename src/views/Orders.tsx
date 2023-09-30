@@ -4,27 +4,20 @@ import { useState } from 'react';
 const Orders = () => {
   const products: (ProductInterface | ExtendedProductInterface)[] = productsJSON.products; //creates products variable to hold the products array from the JSON file
   // get the orders from localStorage
-  const [orders, setOrders] = useState(
+  const [orders, setOrders] = useState<Order[]>(
     JSON.parse(localStorage.getItem('orders') || '[]')
   );
 // Function to remove an order by index
-const removeOrder = (index) => {
+const removeOrder = (index: number) => {
   const updatedOrders = [...orders];
   updatedOrders.splice(index, 1);
   setOrders(updatedOrders);
   localStorage.setItem('orders', JSON.stringify(updatedOrders));
 };
-const formatDate = (dateString) => {
-  const date = new Date(dateString);
-  const options = {
-    year: 'numeric',
-    month: '2-digit',
-    day: '2-digit',
-    hour: '2-digit',
-    minute: '2-digit',
-    hour12: false,
-  };
-  return date.toLocaleString('sv-SE', options);
+const formatDate = (dateString: string) => {
+  const utcDate = new Date(dateString);
+  const swedishDate = new Date(utcDate.toLocaleString('en-US', { timeZone: 'CET' }));
+  return swedishDate.toLocaleString('sv-SE');
 };
 
 return (
