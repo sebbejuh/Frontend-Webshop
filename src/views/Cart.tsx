@@ -8,6 +8,20 @@ const Cart = () => {
   const { cartItems, getCartAmount } = useShopContext();
   const totalAmount = getCartAmount()
   
+  const addToOrder = () => {
+    const order = {
+      cart: cartItems,
+      date: new Date().toISOString(), // add a timestamp for the order
+    };
+    // Retrieve the existing orders from localStorage or create an empty array
+    const orders = JSON.parse(localStorage.getItem('orders')) || [];
+    // Add the new order to the array of orders
+    orders.push(order);
+    // Store the updated orders array back in localStorage
+    localStorage.setItem('orders', JSON.stringify(orders));
+    //clear current cart?
+    //success message?
+  }
   return (
     <section className="cart">
       <h1>Kundvagn</h1>
@@ -21,7 +35,7 @@ const Cart = () => {
       {totalAmount > 0 ?//if totalAmount is greater than 0
         <div className="checkout">
           <p>Totalt pris: {new Intl.NumberFormat('sv-SV').format(totalAmount)} kr</p>
-          <button> Beställ </button>
+          <button onClick={() => addToOrder()}> Beställ </button>
         </div>//else
         : <li className='cart-item'>
           <h3>Kundvagnen är tom.</h3>
