@@ -13,6 +13,7 @@ const Navbar = () => {
     <header className="navbar">
       <nav className="navbar-links">
         <Link to='/webshop-ts/'>Butik</Link>
+        <div className='icon-links'>
         <Link to='/webshop-ts/cart'>
           <ShoppingCart size={30} />
           {totalItems > 0 && <span>{totalItems}</span>}
@@ -20,6 +21,7 @@ const Navbar = () => {
         <Link to='/webshop-ts/orders'>
           <User size={30} />
         </Link>
+        </div>
       </nav>
     </header>
   )
