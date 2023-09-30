@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { ShoppingCart } from 'phosphor-react';
+import { ShoppingCart, User } from 'phosphor-react';
 import { useShopContext } from "../context/useCartContext";
 
 const Navbar = () => {
@@ -16,6 +16,9 @@ const Navbar = () => {
         <Link to='/webshop-ts/cart'>
           <ShoppingCart size={30} />
           {totalItems > 0 && <span>{totalItems}</span>}
+        </Link>
+        <Link to='/webshop-ts/orders'>
+          <User size={30} />
         </Link>
       </nav>
     </header>
