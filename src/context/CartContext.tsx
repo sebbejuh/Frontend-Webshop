@@ -1,4 +1,4 @@
-import { createContext, useState, useEffect, ReactNode, SetStateAction, Dispatch } from 'react';
+import { createContext, useState, useEffect, ReactNode} from 'react';
 import productsJSON from '../fake-db/products.json'
 
 const ShopContext = createContext<ShopContextValueInterface | null>(null);// creates context with value null
