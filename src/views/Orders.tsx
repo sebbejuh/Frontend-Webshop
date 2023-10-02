@@ -22,12 +22,12 @@ const Orders = () => {
 
   return (
     <section className="orders">
-      <h1>Ordrar</h1>
+      <h1>Dina ordrar</h1>
       <ul className="order-list">
         {orders.map((order, index) => (
-          <li key={index}>
-            <p>Datum: {formatDate(order.date)}</p>
-            <ul>
+          <li className='order-item' key={index}>
+            <ul className='order-item-list'>
+              <h4>Produkter:</h4>
               {Object.keys(order.cart).map((productId) => {
                 const product = products.find((p) => p.id === parseInt(productId));
                 if (product && order.cart[productId] !== 0) {
@@ -40,6 +40,10 @@ const Orders = () => {
                 return null;
               })}
             </ul>
+            <div className='order-date'>
+              <h4>Datum:</h4>
+              <p>{formatDate(order.date)}</p>
+            </div>
             <button onClick={() => removeOrder(index)}>Ta bort order</button>
           </li>
         ))}
