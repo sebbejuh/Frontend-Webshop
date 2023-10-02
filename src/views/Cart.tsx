@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 
 const Cart = () => {
   const products: (ProductInterface | ExtendedProductInterface)[] = productsJSON.products; //creates products variable to hold the products array from the JSON file
-  const { cartItems, getCartAmount } = useShopContext();
+  const { cartItems, getCartAmount, emptyCart } = useShopContext();
   const totalAmount = getCartAmount()
 
   const addToOrder = () => {
@@ -13,13 +13,14 @@ const Cart = () => {
       cart: cartItems,
       date: new Date().toISOString(), // add a timestamp for the order
     };
-    // Retrieve the existing orders from localStorage or create an empty array
+    // get the existing orders from localStorage or create an empty array
     const orders = JSON.parse(localStorage.getItem('orders') || '[]');
-    // Add the new order to the array of orders
+    // add the new order to the array of orders
     orders.push(order);
     // Store the updated orders array back in localStorage
     localStorage.setItem('orders', JSON.stringify(orders));
     //clear current cart?
+    emptyCart();
     //success message?
   }
   return (

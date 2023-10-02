@@ -1,4 +1,4 @@
-import { createContext, useState, useEffect, ReactNode } from 'react';
+import { createContext, useState, useEffect, ReactNode, SetStateAction, Dispatch } from 'react';
 import productsJSON from '../fake-db/products.json'
 
 const ShopContext = createContext<ShopContextValueInterface | null>(null);// creates context with value null
@@ -52,6 +52,11 @@ const ShopContextProvider = (props: { children: ReactNode }) => {
   const updateCartItem = (newAmount: number, itemId: number) => {//takes in a new amount of products for an id
     setCartItems((prev) => ({ ...prev, [itemId]: newAmount }));//replaces the previous amount with the new
   };
+  // EMPTY CART FUNCTION
+  const emptyCart = () => {
+    const defaultCart = getDefaultCart();
+    setCartItems(defaultCart);
+  };
 
   const contextValue: ShopContextValueInterface = {//object of functions and object to be used by provider
     cartItems,
@@ -59,6 +64,7 @@ const ShopContextProvider = (props: { children: ReactNode }) => {
     removeFromCart,
     updateCartItem,
     getCartAmount,
+    emptyCart,
   };
 
   return (
