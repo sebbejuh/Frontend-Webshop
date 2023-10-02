@@ -19,7 +19,7 @@ const Cart = () => {
     orders.push(order);
     // Store the updated orders array back in localStorage
     localStorage.setItem('orders', JSON.stringify(orders));
-    //clear current cart?
+    //clear current cart
     emptyCart();
     //success message?
   }
