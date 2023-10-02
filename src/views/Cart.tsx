@@ -1,12 +1,13 @@
 import { CartItem } from "../components/CartItem";
 import { useShopContext } from "../context/useCartContext";
 import productsJSON from '../fake-db/products.json'
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 const Cart = () => {
   const products: (ProductInterface | ExtendedProductInterface)[] = productsJSON.products; //creates products variable to hold the products array from the JSON file
   const { cartItems, getCartAmount, emptyCart } = useShopContext();
   const totalAmount = getCartAmount()
+  const navigate = useNavigate();
 
   const addToOrder = () => {
     const order = {
@@ -21,7 +22,8 @@ const Cart = () => {
     localStorage.setItem('orders', JSON.stringify(orders));
     //clear current cart
     emptyCart();
-    //success message?
+    //navigate to order page
+    navigate("/webshop-ts/orders");
   }
   return (
     <section className="cart">
