@@ -24,32 +24,40 @@ const Orders = () => {
   return (
     <section className="orders">
       <h1>Dina ordrar</h1>
-      <ul className="order-list">
-        {orders.map((order, index) => (
-          <li className='order-item' key={index}>
-            <div className='order-date'>
-              <p>{formatDate(order.date)}</p>
-            </div>
-            <ul className='order-item-list'>
-              <h4>Produkter:</h4>
-              {Object.keys(order.cart).map((productId) => {
-                const product = products.find((p) => p.id === parseInt(productId));
-                if (product && order.cart[productId] !== 0) {
-                  return (
-                    <li key={productId}>
-                      {order.cart[productId]} {product.name}
-                    </li>
-                  );
-                }
-                return null;
-              })}
-            </ul>
-            <div className="order-btn">
-              <button onClick={() => removeOrder(index)}><X size={34} weight="bold"/></button>
-            </div>
+      {orders.length === 0 ? (
+        <ul className="order-list">
+          <li className='order-item'>
+            <h4>Du har inte gjort några ordrar.</h4>
           </li>
-        ))}
-      </ul>
+        </ul>
+      ) : (
+        <ul className="order-list">
+          {orders.map((order, index) => (
+            <li className='order-item' key={index}>
+              <div className='order-date'>
+                <p>{formatDate(order.date)}</p>
+              </div>
+              <ul className='order-item-list'>
+                <h4>Produkter:</h4>
+                {Object.keys(order.cart).map((productId) => {
+                  const product = products.find((p) => p.id === parseInt(productId));
+                  if (product && order.cart[productId] !== 0) {
+                    return (
+                      <li key={productId}>
+                        {order.cart[productId]} {product.name}
+                      </li>
+                    );
+                  }
+                  return null;
+                })}
+              </ul>
+              <div className="order-btn">
+                <button onClick={() => removeOrder(index)}><X size={34} weight="bold" /></button>
+              </div>
+            </li>
+          ))}
+        </ul>
+      )}
     </section>
   )
 }
