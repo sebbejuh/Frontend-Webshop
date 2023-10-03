@@ -1,5 +1,6 @@
 import productsJSON from '../fake-db/products.json'
 import { useState } from 'react';
+import { X } from 'phosphor-react';
 
 const Orders = () => {
   const products: (ProductInterface | ExtendedProductInterface)[] = productsJSON.products; //creates products variable to hold the products array from the JSON file
@@ -26,6 +27,9 @@ const Orders = () => {
       <ul className="order-list">
         {orders.map((order, index) => (
           <li className='order-item' key={index}>
+            <div className='order-date'>
+              <p>{formatDate(order.date)}</p>
+            </div>
             <ul className='order-item-list'>
               <h4>Produkter:</h4>
               {Object.keys(order.cart).map((productId) => {
@@ -40,11 +44,9 @@ const Orders = () => {
                 return null;
               })}
             </ul>
-            <div className='order-date'>
-              <h4>Datum:</h4>
-              <p>{formatDate(order.date)}</p>
+            <div className="order-btn">
+              <button onClick={() => removeOrder(index)}><X size={34} weight="bold"/></button>
             </div>
-            <button onClick={() => removeOrder(index)}>Ta bort order</button>
           </li>
         ))}
       </ul>
