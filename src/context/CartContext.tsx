@@ -42,8 +42,8 @@ const ShopContextProvider = (props: { children: ReactNode }) => {
   const addToCart = (itemId: number) => { //takes in an id of a product
     setCartItems((prev) => ({ ...prev, [itemId]: prev[itemId] + 1 }));//takes in previous state of cartItems and adds 1 to the itemId.
   };
-  // REMOVE FROM CART FUNCTION
-  const removeFromCart = (itemId: number) => {
+  // SUBTRACT FROM CART FUNCTION
+  const subtractFromCart = (itemId: number) => {
     if (cartItems[itemId] > 0) {
       setCartItems((prev) => ({ ...prev, [itemId]: prev[itemId] - 1 }));//takes in previous state of cartItems and reduces by 1 to the itemId.
     }
@@ -65,7 +65,7 @@ const ShopContextProvider = (props: { children: ReactNode }) => {
   const contextValue: ShopContextValueInterface = {//object of functions and object to be used by provider
     cartItems,
     addToCart,
-    removeFromCart,
+    subtractFromCart,
     updateCartItem,
     getCartAmount,
     emptyCart,
