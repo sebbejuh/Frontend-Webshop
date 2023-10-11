@@ -10,7 +10,9 @@ export const CartItem = (props: ProductPropsInterface) => {
     //checks if inputValue is a number
     if (!Number.isNaN(Number(inputValue))) {
       const newAmount = Number(inputValue);
-      updateCartItem(newAmount, itemId);
+      if(newAmount <= 1000 && newAmount > 0){//checks if input is less than 1000 and greater than 0
+        updateCartItem(newAmount, itemId);
+      }
     }
   };
 
