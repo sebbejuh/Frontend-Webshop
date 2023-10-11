@@ -40,7 +40,9 @@ const ShopContextProvider = (props: { children: ReactNode }) => {
   };
   // ADD TO CART FUNCTION
   const addToCart = (itemId: number) => { //takes in an id of a product
-    setCartItems((prev) => ({ ...prev, [itemId]: prev[itemId] + 1 }));//takes in previous state of cartItems and adds 1 to the itemId.
+    if(cartItems[itemId] < 1000){
+      setCartItems((prev) => ({ ...prev, [itemId]: prev[itemId] + 1 }));//takes in previous state of cartItems and adds 1 to the itemId.
+    }
   };
   // SUBTRACT FROM CART FUNCTION
   const subtractFromCart = (itemId: number) => {
