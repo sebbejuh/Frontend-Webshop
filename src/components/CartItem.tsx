@@ -1,9 +1,10 @@
 import { useShopContext } from "../context/useCartContext";
 import { Link } from 'react-router-dom';
+import { X } from 'phosphor-react';
 
 export const CartItem = (props: ProductPropsInterface) => {
   const { id, name, price, imgURL } = props.data;//extract some properties from object props.data and make them variables
-  const { cartItems, addToCart, removeFromCart, updateCartItem } = useShopContext();//extracts functions and object from custom hook
+  const { cartItems, addToCart, removeFromCart, updateCartItem, removeCartItem } = useShopContext();//extracts functions and object from custom hook
 
   //input validation
   const InputChangeValidation = (inputValue: string, itemId: number) => {
@@ -31,6 +32,9 @@ export const CartItem = (props: ProductPropsInterface) => {
           <input name='amount' value={cartItems[id]} onChange={(e) => InputChangeValidation(e.target.value, id)} onFocus={(e) => e.target.select()}/>
           <button onClick={() => addToCart(id)}>+</button>
         </div>
+      </div>
+      <div className="cart-remove">
+        <button onClick={() => removeCartItem(id)}><X size={34} weight="bold" /></button>
       </div>
     </li>
   )
