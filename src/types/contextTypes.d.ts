@@ -9,4 +9,5 @@ interface ShopContextValueInterface {
   removeFromCart: (itemId: number) => void;
   updateCartItem: (newAmount: number, itemId: number) => void;
   emptyCart: () => void;
+  removeCartItem: (itemId: number) => void;
 }

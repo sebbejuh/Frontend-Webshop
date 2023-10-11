@@ -52,6 +52,10 @@ const ShopContextProvider = (props: { children: ReactNode }) => {
   const updateCartItem = (newAmount: number, itemId: number) => {//takes in a new amount of products for an id
     setCartItems((prev) => ({ ...prev, [itemId]: newAmount }));//replaces the previous amount with the new
   };
+  // REMOVE PRODUCT FROM CART
+  const removeCartItem = (itemId: number) => {
+    setCartItems((prev) => ({ ...prev, [itemId]: 0 }));
+  };
   // EMPTY CART FUNCTION
   const emptyCart = () => {
     const defaultCart = getDefaultCart();
@@ -65,6 +69,7 @@ const ShopContextProvider = (props: { children: ReactNode }) => {
     updateCartItem,
     getCartAmount,
     emptyCart,
+    removeCartItem,
   };
 
   return (
