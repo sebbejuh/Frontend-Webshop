@@ -41,7 +41,7 @@ const Cart = () => {
           <button onClick={() => addToOrder()}> Beställ </button>
         </div>//else
         : <li className='cart-item'>
-          <h3>Kundvagnen är tom.</h3>
+          <h3>Bästa kund, din kundvagn är tom.</h3>
           </li>}
       <Link className="shop-link" to='/webshop-ts/'>Fortsätt handla</Link>
     </section>
