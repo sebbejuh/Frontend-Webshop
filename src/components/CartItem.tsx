@@ -28,7 +28,7 @@ export const CartItem = (props: ProductPropsInterface) => {
         <h4>Pris: {new Intl.NumberFormat('sv-SV').format(price)} kr</h4>
         <div className="cart-count">
           <button onClick={() => removeFromCart(id)}>-</button>
-          <input name='amount' value={cartItems[id]} onChange={(e) => InputChangeValidation(e.target.value, id)} />
+          <input name='amount' value={cartItems[id]} onChange={(e) => InputChangeValidation(e.target.value, id)} onFocus={(e) => e.target.select()}/>
           <button onClick={() => addToCart(id)}>+</button>
         </div>
       </div>
