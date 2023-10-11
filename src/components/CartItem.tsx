@@ -5,6 +5,15 @@ export const CartItem = (props: ProductPropsInterface) => {
   const { id, name, price, imgURL } = props.data;//extract some properties from object props.data and make them variables
   const { cartItems, addToCart, removeFromCart, updateCartItem } = useShopContext();//extracts functions and object from custom hook
 
+  //input validation
+  const InputChangeValidation = (inputValue: string, itemId: number) => {
+    //checks if inputValue is a number
+    if (!Number.isNaN(Number(inputValue))) {
+      const newAmount = Number(inputValue);
+      updateCartItem(newAmount, itemId);
+    }
+  };
+
   return (
     <li className='cart-item'>
       <div className="cart-img">
@@ -17,7 +26,7 @@ export const CartItem = (props: ProductPropsInterface) => {
         <h4>Pris: {new Intl.NumberFormat('sv-SV').format(price)} kr</h4>
         <div className="cart-count">
           <button onClick={() => removeFromCart(id)}>-</button>
-          <input name='amount' value={cartItems[id]} onChange={(e) => updateCartItem(Number(e.target.value), id)} />
+          <input name='amount' value={cartItems[id]} onChange={(e) => InputChangeValidation(e.target.value, id)} />
           <button onClick={() => addToCart(id)}>+</button>
         </div>
       </div>
