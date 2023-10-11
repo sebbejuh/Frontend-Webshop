@@ -1,6 +1,6 @@
 .navbar {
   background-color: rgb(45, 45, 45);
-  padding: 0.5rem;
+  padding: 0.5rem 0;
   max-height: 9vh;
   // margin-bottom: 1rem;
   align-items: center;
@@ -34,6 +34,13 @@
     a:hover {
       text-decoration: underline;
       background-color: rgb(27, 27, 27);
+    }
+  }
+}
+@media (max-width: 500px){
+  .navbar{
+    .navbar-links{
+      margin: 0 10vw;
     }
   }
 }
