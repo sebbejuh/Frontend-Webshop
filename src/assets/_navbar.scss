@@ -1,46 +1,53 @@
 .navbar {
   background-color: rgb(45, 45, 45);
-  padding: 0.5rem 0;
-  max-height: 9vh;
-  // margin-bottom: 1rem;
+  z-index: 999;
+  height: 4.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.navbar-links {
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 20vw;
   align-items: center;
 
-  .navbar-links {
-    display: flex;
-    justify-content: space-between;
-    margin: 0 20vw;
-    align-items: center;
+  a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+    padding: 1vh 0.5vw;
+    border-radius: 15%;
 
-    a {
-      color: white;
-      text-decoration: none;
-      font-size: 1.5rem;
-      padding: 1vh 0.5vw;
-      border-radius: 15%;
-      span{
-        font-size: 0.8rem;
-        font-weight: bold;
-        background-color: red;
-        border-radius: 40%;
-        padding: 5px 8px;
-      }
-    }
-
-    .icon-links a{
-      padding: 1vh 0.5vw;
-      
-    }
-
-    a:hover {
-      text-decoration: underline;
-      background-color: rgb(27, 27, 27);
+    span {
+      font-size: 0.8rem;
+      font-weight: bold;
+      background-color: red;
+      border-radius: 40%;
+      padding: 5px 8px;
     }
   }
+
+  .icon-links a {
+    padding: 1vh 0.5vw;
+
+  }
+
+  a:hover {
+    text-decoration: underline;
+    background-color: rgb(27, 27, 27);
+  }
 }
-@media (max-width: 500px){
-  .navbar{
-    .navbar-links{
-      margin: 0 10vw;
-    }
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+@media (max-width: 500px) {
+  .navbar-links {
+    margin: 0 10vw;
   }
 }

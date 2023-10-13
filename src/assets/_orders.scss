@@ -1,9 +1,8 @@
-.orders{
+.orders {
   background-color: white;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 0.8rem;
 
   h1 {
     background: #454545;
@@ -15,6 +14,7 @@
     padding: 1rem 0;
   }
 }
+
 .order-list {
   display: flex;
   flex-direction: column;
@@ -24,7 +24,8 @@
   margin-top: 0.5vh;
   margin-bottom: 0.5vh;
 }
-.order-item{
+
+.order-item {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -38,8 +39,9 @@
   // overflow: hidden;
   gap: 4vw;
   width: 100%;
-  .order-btn{
-    button{
+
+  .order-btn {
+    button {
       display: flex;
       justify-content: center;
       width: 5vw;
@@ -54,28 +56,32 @@
       border: 2px solid black;
     }
   }
-  .order-btn :hover{
-    cursor: pointer; 
+
+  .order-btn :hover {
+    cursor: pointer;
     background-color: #e00000;
-    
+
   }
+
   // .order-item-list{
-    
+
   //   li{
-      
+
   //   }
   // }
-  .order-date{
+  .order-date {
     width: 90px;
     font-weight: 500;
   }
 }
-@media (max-width: 488px){
-  .order-item{
+
+@media (max-width: 488px) {
+  .order-item {
     flex-direction: column;
     flex-wrap: nowrap;
   }
-  .orders{
+
+  .orders {
     width: 100%;
   }
 }

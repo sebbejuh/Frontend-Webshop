@@ -9,8 +9,9 @@ const Navbar = () => {
   for (const id in cartItems) { //loops through cartItems by id
     totalItems += cartItems[id];//adds the value for each property to totalItems
   }
+
   return (
-    <header className="navbar">
+    <header className='navbar sticky'>
       <nav className="navbar-links">
         <Link to='/webshop-ts/'>Butik</Link>
         <div className='icon-links'>
