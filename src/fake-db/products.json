@@ -48,21 +48,21 @@
       "id": 7,
       "name": "Apelsin",
       "price": 19,
-      "imgURL": "https://img.freepik.com/premium-photo/fresh-single-orange-fruit-isolated-white_127657-19187.jpg",
+      "imgURL": "https://img.freepik.com/free-photo/closeup-orange_144627-3969.jpg",
       "description": "Våra fräscha solmogna apelsiner är den ultimata smakupplevelsen för dig som älskar naturens underbara gåvor. Denna saftiga och smakrika citrusfrukt är handplockad med omsorg och kärlek för att säkerställa högsta kvalitet och smak. Med sin strålande orange färg och saftiga kärna är våra apelsiner en smakrik och hälsosam tillskott till din kost."
     },
     {
       "id": 8,
       "name": "Äpple",
       "price": 12,
-      "imgURL": "https://img.freepik.com/premium-photo/red-apples-isolated-white-background_299651-65.jpg",
+      "imgURL": "https://img.freepik.com/free-photo/green-apple-isolated-white_2829-9403.jpg",
       "description": "Våra saftiga och ekologiska äpplen är en hängivenhet till naturens enastående skapelse. Varje äpple är noggrant odlad med kärlek och omsorg för att erbjuda dig den bästa smakupplevelsen och näringen som naturen har att erbjuda. Med sin knapriga textur och ljuvliga smak är våra äpplen den ultimata tillsatsen till din hälsosamma livsstil."
     },
     {
       "id": 9,
       "name": "Ananas",
       "price": 45,
-      "imgURL": "https://img.freepik.com/premium-photo/juicy-pineapple-white-background-isolated_96064-298.jpg",
+      "imgURL": "https://img.freepik.com/free-photo/pineapple_144627-22187.jpg",
       "description": "Våra söta och saftiga färska ananas är ett tropiskt smakäventyr som tar dina smaklökar på en resa till paradiset. Varje ananas är noggrant utvald för att säkerställa maximal smak och saftighet. Denna exotiska frukt är inte bara en delikatess för gommen utan också en källa till viktiga näringsämnen och antioxidanter som främjar din hälsa.",
       "nonEuCountry": "Brasilien"
     },
@@ -70,7 +70,7 @@
       "id": 10,
       "name": "Kiwi",
       "price": 9,
-      "imgURL": "https://img.freepik.com/premium-photo/kiwi-fruit-isolated-white-background_42033-482.jpg",
+      "imgURL": "https://img.freepik.com/free-photo/fresh-kiwi-fruit-isolated_144627-30034.jpg",
       "description": "Våra färska kiwifrukter är en smakfull explosion av fräschhet och vitalitet. Dessa små gröna kraftpaket är handplockade med omsorg och mognar perfekt för att ge dig den bästa smakupplevelsen. Kiwin är inte bara en läcker delikatess utan också en näringsrik frukt som är full av vitaminer och antioxidanter, perfekt för att boosta din hälsa.",
       "nonEuCountry": "Kina"
     },
@@ -78,7 +78,7 @@
       "id": 11,
       "name": "Persika",
       "price": 14,
-      "imgURL": "https://img.freepik.com/premium-photo/peach-isolated-white-background_93675-2945.jpg",
+      "imgURL": "https://img.freepik.com/free-photo/peach-table_144627-17514.jpg",
       "description": "Våra saftiga solmogna persikor är en smakfull skatt som naturen har att erbjuda. Varje persika handplockas med varsamhet och omsorg för att säkerställa att du får den mest underbara smakupplevelsen. Med sin förtrollande sötma och saftiga konsistens är våra persikor den perfekta frukten för att njuta av som en hälsosam och uppfriskande behandling."
     },
     {
